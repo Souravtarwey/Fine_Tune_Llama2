@@ -8,7 +8,7 @@ This project demonstrates how to fine-tune the LLAMA2 model for the summarizatio
 - We also need to consider the overhead due to optimizer states, gradients, and forward activations
 - Full fine-tuning is not possible here: we need parameter-efficient fine-tuning (PEFT) techniques like LoRA or QLoRA.
 - To drastically reduce the VRAM usage, we must fine-tune the model in 4-bit precision, which is why we’ll use QLoRA here.
-- 
+
 ## Project Overview
 
 1. **Train the Model in Google Colab:**
