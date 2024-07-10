@@ -3,6 +3,12 @@
 
 This project demonstrates how to fine-tune the LLAMA2 model for the summarization task using the PubMed Summarization dataset from Hugging Face. The fine-tuned model can then be used locally to generate summaries for new articles.
 
+# Note:
+- Free Google Colab offers a 15GB Graphics Card (Limited Resources --> Barely enough to store Llama 2–7b’s weights)
+- We also need to consider the overhead due to optimizer states, gradients, and forward activations
+- Full fine-tuning is not possible here: we need parameter-efficient fine-tuning (PEFT) techniques like LoRA or QLoRA.
+- To drastically reduce the VRAM usage, we must fine-tune the model in 4-bit precision, which is why we’ll use QLoRA here.
+- 
 ## Project Overview
 
 1. **Train the Model in Google Colab:**
