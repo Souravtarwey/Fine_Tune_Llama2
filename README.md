@@ -1,5 +1,5 @@
-# Fine_Tune_Llama2
-# Fine-Tuned Summarization Model
+# Fine_Tune_Llama2 using Qlora for Summarization task
+
 
 This project demonstrates how to fine-tune the LLAMA2 model for the summarization task using the PubMed Summarization dataset from Hugging Face. The fine-tuned model can then be used locally to generate summaries for new articles.
 
@@ -7,7 +7,7 @@ This project demonstrates how to fine-tune the LLAMA2 model for the summarizatio
 
 1. **Train the Model in Google Colab:**
    - Load and preprocess the PubMed Summarization dataset.
-   - Fine-tune the LLAMA2 model.
+   - Fine-tune the LLAMA2 model usin qlora confiq. .
    - Save the fine-tuned model and tokenizer.
 
 2. **Run Inference Locally:**
